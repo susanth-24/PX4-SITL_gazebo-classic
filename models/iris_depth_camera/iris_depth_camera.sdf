@@ -20,6 +20,10 @@
         </limit>
       </axis>
     </joint>
-
+    <plugin name="motor_failure" filename="libgazebo_motor_failure_plugin.so">
+            <robotNamespace/>
+            <ROSMotorNumSubTopic>/motor_failure/motor_number</ROSMotorNumSubTopic>
+            <MotorFailureNumPubTopic>/gazebo/motor_failure_num</MotorFailureNumPubTopic>
+    </plugin>
   </model>
 </sdf>
